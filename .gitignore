@@ -1,0 +1,6 @@
+# Dependencies, Caches & Artifacts
+.dccache
+coverage/
+dist/
+node_modules/
+tsconfig.tsbuildinfo
