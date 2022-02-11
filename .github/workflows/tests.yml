@@ -9,7 +9,7 @@ on:
 
 defaults:
   run:
-    working-directory: ./nominal
+    working-directory: ./safe-env
 
 jobs:
   build:
