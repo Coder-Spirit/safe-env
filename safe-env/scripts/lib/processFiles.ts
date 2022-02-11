@@ -26,7 +26,7 @@ export async function processFile(
   ext: string,
   exactReplacements: ([string, string])[] = []
 ): Promise<void> {
-  const thePattern = /^(.*}\s+from\s+'\.[A-Za-z0-9_./]+)';?\n?$/s
+  const thePattern = /^(.*}\s+from\s+'\.[A-Za-z0-9_./-]+)';?\n?$/s
   const hasExtension = /\.(js|ts|d\.ts)$/s
 
   if (!filePath.endsWith(ext)) {

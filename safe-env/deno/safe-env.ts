@@ -5,9 +5,9 @@ import {
   PositiveIntegerInput,
   TaggedInteger,
   TaggedPositive,
-} from './types/value-types'
-import { EnvWrapper } from './types/env-wrapper'
-import { SafeEnvError } from './error'
+} from './types/value-types.ts';
+import { EnvWrapper } from './types/env-wrapper.ts';
+import { SafeEnvError } from './error.ts';
 
 interface StringDict {
   [key: string]: string | undefined

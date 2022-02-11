@@ -1,4 +1,4 @@
-import { FastProperty } from '@coderspirit/nominal'
+import { FastProperty } from 'https://deno.land/x/nominal@3.2.1/nominal/deno/index.ts'
 
 // Basic Types (copied from Type-Fest)
 // -----------------------------------------------------------------------------

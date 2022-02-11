@@ -5,7 +5,7 @@ import {
   PositiveIntegerInput,
   TaggedInteger,
   TaggedPositive,
-} from './value-types'
+} from './value-types.ts';
 
 export interface EnvWrapper {
   /**
