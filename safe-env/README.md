@@ -1,4 +1,4 @@
-# @coderspirit/lambda-ioc
+# @coderspirit/safe-env
 
 [![NPM version](https://img.shields.io/npm/v/@coderspirit/safe-env.svg?style=flat)](https://www.npmjs.com/package/@coderspirit/safe-env)
 [![TypeScript](https://badgen.net/npm/types/@coderspirit/safe-env)](http://www.typescriptlang.org/)
