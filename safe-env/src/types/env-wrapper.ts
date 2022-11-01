@@ -1,11 +1,17 @@
-import {
-  EnvVarName,
+import type {
   IntegerInput,
   PositiveInput,
   PositiveIntegerInput,
   TaggedInteger,
   TaggedPositive,
-} from './value-types'
+} from '@coderspirit/newtype'
+
+export type EnvVarName<S extends string> = S extends
+  | ''
+  | ` ${string}`
+  | `${string} `
+  ? never
+  : S
 
 export interface EnvWrapper {
   /**

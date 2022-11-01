@@ -1,7 +1,7 @@
 {
-  "name": "@coderspirit/safe-env",
+  "name": "@coderspirit/newtype",
   "version": "0.2.0",
-  "description": "Safe & strongly typed environment variables accessor",
+  "description": "Commonly used strong typed defintions for primitive values",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/cjs/index.d.ts",
@@ -35,7 +35,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@coderspirit/newtype": "^0.2.0"
+    "@coderspirit/nominal": "^3.2.2"
   },
   "devDependencies": {
     "@types/jest": "^29.2.1",

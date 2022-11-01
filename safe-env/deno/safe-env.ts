@@ -1,12 +1,11 @@
-import {
-  EnvVarName,
+import type { EnvVarName, EnvWrapper } from './types/env-wrapper.ts';
+import type {
   IntegerInput,
   PositiveInput,
   PositiveIntegerInput,
   TaggedInteger,
   TaggedPositive,
-} from './types/value-types.ts';
-import { EnvWrapper } from './types/env-wrapper.ts';
+} from '@coderspirit/newtype'
 import { SafeEnvError } from './error.ts';
 
 interface StringDict {
@@ -128,7 +127,7 @@ const booleanTable = {
 const integerRegexp = /^(0|-?[1-9][0-9]*)$/
 
 const missingVarError = (varName: string) =>
-  new SafeEnvError(`${varName} is not defined, and no default was provided`)
+  new SafeEnvError(`${varName} is not defined, and no default value was provided`)
 
 const invalidVarError = (varName: string, value: string, expected: string) =>
   new SafeEnvError(`${varName} is not valid (${value}), expected '${expected}'`)

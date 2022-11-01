@@ -20,7 +20,7 @@ describe('getSafeEnv', () => {
     it('errors when not available and no fallback is set', () => {
       const safeEnv = getSafeEnv({})
       expect(() => safeEnv.asString('MISSING')).toThrow(
-        new SafeEnvError('MISSING is not defined, and no default was provided'),
+        new SafeEnvError('MISSING is not defined, and no default value was provided'),
       )
     })
   })
@@ -51,7 +51,7 @@ describe('getSafeEnv', () => {
     it('errors when not available and no fallback is set', () => {
       const safeEnv = getSafeEnv({})
       expect(() => safeEnv.asNumber('MISSING')).toThrow(
-        new SafeEnvError('MISSING is not defined, and no default was provided'),
+        new SafeEnvError('MISSING is not defined, and no default value was provided'),
       )
     })
 
@@ -93,7 +93,7 @@ describe('getSafeEnv', () => {
     it('errors when not available and no fallback is set', () => {
       const safeEnv = getSafeEnv({})
       expect(() => safeEnv.asPositiveNumber('MISSING')).toThrow(
-        new SafeEnvError('MISSING is not defined, and no default was provided'),
+        new SafeEnvError('MISSING is not defined, and no default value was provided'),
       )
     })
 
@@ -159,7 +159,7 @@ describe('getSafeEnv', () => {
     it('errors when not available and no fallback is set', () => {
       const safeEnv = getSafeEnv({})
       expect(() => safeEnv.asInteger('MISSING')).toThrow(
-        new SafeEnvError('MISSING is not defined, and no default was provided'),
+        new SafeEnvError('MISSING is not defined, and no default value was provided'),
       )
     })
 
@@ -212,7 +212,7 @@ describe('getSafeEnv', () => {
     it('errors when not available and no fallback is set', () => {
       const safeEnv = getSafeEnv({})
       expect(() => safeEnv.asPositiveInteger('MISSING')).toThrow(
-        new SafeEnvError('MISSING is not defined, and no default was provided'),
+        new SafeEnvError('MISSING is not defined, and no default value was provided'),
       )
     })
 
@@ -334,7 +334,7 @@ describe('getSafeEnv', () => {
     it('errors when not available and no fallback is set', () => {
       const safeEnv = getSafeEnv({})
       expect(() => safeEnv.asBoolean('MISSING')).toThrow(
-        new SafeEnvError('MISSING is not defined, and no default was provided'),
+        new SafeEnvError('MISSING is not defined, and no default value was provided'),
       )
     })
 

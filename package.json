@@ -1,6 +1,7 @@
 {
   "private": true,
   "workspaces": [
+    "newtype",
     "safe-env"
   ],
   "scripts": {
